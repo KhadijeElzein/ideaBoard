@@ -47,3 +47,23 @@ $(document).on("click",".tile",function(){{
                     }
     }});
 }});
+
+$(document).on('focusout', 'form', function(event) {
+    var id = $(this).parent().attr('id');
+    setTimeout(function() {
+        if (!event.currentTarget.contains(document.activeElement)) {
+            $.ajax({
+                url: '/'+id,
+                type: "post",
+                data:{
+                    title:$("#title").val(),
+                    text:$("#text").val(),
+                    csrfmiddlewaretoken: token,
+                    action: 'post'
+            },
+            success: function(data) {
+                $("#content").load(location.href+" #content>*","");
+            }});
+        }
+    }, 0);
+});

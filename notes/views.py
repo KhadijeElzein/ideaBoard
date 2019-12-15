@@ -21,7 +21,16 @@ def index(request):
     return render(request, 'index.html', data)
 
 
-def details(request, pk):
+def details(request,pk):
     note = Note.objects.get(pk=pk)
-    response_data = {'id': note.id, 'title': note.title, 'text': note.text}
+    response_data = {}
+    if request.POST.get('action') == 'post':
+        title = request.POST.get('title')
+        text = request.POST.get('text')
+        Note.objects.filter(pk=pk).update(
+            title = title,
+            text = text,)
+    response_data['id'] = note.id
+    response_data['title'] = note.title
+    response_data['text'] = note.text
     return JsonResponse(response_data)
