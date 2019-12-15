@@ -67,3 +67,18 @@ $(document).on('focusout', 'form', function(event) {
         }
     }, 0);
 });
+
+$(document).on("click",".deleteBtn",function(){{
+    var id = $(this).parent().attr('id');
+    $.ajax({
+            url: '/'+id,
+            type: "DELETE",
+            dataType: "json",
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("X-CSRFToken", token);
+            },
+            success: function () {
+                $("#content").load(location.href+" #content>*","");
+            },
+        });
+}});

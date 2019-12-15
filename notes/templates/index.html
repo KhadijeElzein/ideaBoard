@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'functions.js' %}"></script>
     <link  href="https://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="{% static 'ico.png' %}"/>
     <title>Idea Board</title>
 </head>
@@ -28,7 +29,8 @@
         {% if notes %}
         {% for note in notes %}
             <div class="tile" id='{{note.id}}'>
-                <div class="input" id="title">
+                 <span class="deleteBtn"><i class="material-icons">delete_outline</i></span>
+                 <div class="input" id="title">
                     {% if note.title%}
                         {{note.title}}
                     {% else %}

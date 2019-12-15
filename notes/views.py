@@ -1,3 +1,5 @@
+from urllib.parse import parse_qs
+
 from django.http import JsonResponse
 from django.shortcuts import render
 from .models import Note
@@ -30,6 +32,8 @@ def details(request,pk):
         Note.objects.filter(pk=pk).update(
             title = title,
             text = text,)
+    if request.method == "DELETE":
+        Note.objects.filter(pk=pk).delete()
     response_data['id'] = note.id
     response_data['title'] = note.title
     response_data['text'] = note.text
