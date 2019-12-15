@@ -1,0 +1,28 @@
+.tile {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    float: left;
+    clear: none;
+    width: 10em;
+    height: 10em;
+    overflow: visible;
+    margin: 1em 1em;
+    padding: 0.5em 0.5em;
+    background-color: yellow;
+    cursor: default;
+}
+
+#title{
+    font-weight: bold;
+}
+
+#text{
+    font-family:"Reenie Beanie",arial,sans-serif;
+    font-size:180%;
+}
+
+body{
+    font-family:arial,sans-serif;
+    font-size:100%;
+}

@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29d089c5-10d0-412d-bb73-6562eebef433" name="Default Changelist" comment="" />
+    <list default="true" id="90c18b05-b5ec-4908-84ca-0c8e3df0f55d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1V234psb6dTPdZfSPg8ULPLL7iv" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1V26ULfp8QUHu9hnDyJxFtFf3FS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,12 +19,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ideaboard2" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/notes/templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lopeselzein\Desktop\teste\ideaboard\ideaboard" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lopeselzein\Desktop\teste\ideaboard\notes\templates" />
+      <recent name="C:\Users\lopeselzein\Desktop\teste\ideaboard\ideaboard\static" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -40,26 +44,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="29d089c5-10d0-412d-bb73-6562eebef433" name="Default Changelist" comment="" />
-      <created>1576437174085</created>
+      <changelist id="90c18b05-b5ec-4908-84ca-0c8e3df0f55d" name="Default Changelist" comment="" />
+      <created>1576438856571</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576437174085</updated>
+      <updated>1576438856571</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1576437392854">
+    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1576438854354">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576437392854" />
-    <state x="461" y="182" key="SettingsEditor" timestamp="1576437207429">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="461" y="182" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1576437207429" />
-    <state x="655" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1576437378924">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="655" y="363" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576437378924" />
+    <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576438854354" />
   </component>
 </project>
