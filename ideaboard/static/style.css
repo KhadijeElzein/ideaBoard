@@ -26,3 +26,19 @@ body{
     font-family:arial,sans-serif;
     font-size:100%;
 }
+.input{
+    border:0;
+    background:none;
+    outline:none;
+    margin-top:10px;
+    width:140px;
+}
+
+.input:focus{
+    border:solid 1px lightgrey;
+}
+
+textarea{
+    resize:none;
+    height:90px;
+}

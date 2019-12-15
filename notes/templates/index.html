@@ -9,14 +9,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'functions.js' %}"></script>
     <link  href="https://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" type="image/png" href="{% static 'ico.png' %}"/>
     <title>Idea Board</title>
 </head>
-
+<script type="text/javascript">
+    var url = '{% url "index" %}';
+    var token = '{{ csrf_token }}';
+</script>
 <body>
     <nav class="navbar navbar-dark" style="background-color: #0ECFB4;">
         <span class="navbar-brand mb-0 h1">Idea Board</span>
+        <button type="button" class="btn btn-info btn-lg" id="new-idea" style="margin:5px;">+</button>
     </nav>
    
     <div id="content">
