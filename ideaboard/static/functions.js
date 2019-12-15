@@ -24,3 +24,26 @@ $(document).on("click","#new-idea",function(){
             $("#title").focus();
     }});
 });
+
+$(document).on("click",".tile",function(){{
+    var $this = $(this);
+    var id = $($this).attr('id');
+    $.ajax({
+        url: '/'+id,
+        type: "get",
+        success: function(response) {
+            if($('#form-'+response.id).length === 0){
+                $($this).html('<form id="form-'+response.id+'">\
+                                <div>\
+                                    <input type="text" name="title" class="input" id="title" value="'+response.title+'"/>\
+                                </div>\
+                                <div>\
+                                    <textarea name="text" id="text" class="input">'
+                                    +response.text+
+                                    '</textarea>\
+                                </div>\
+                            </form>\
+                        </div>')
+                    }
+    }});
+}});
